@@ -1,0 +1,146 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  padding: 20px 60px;
+  background-color: black;
+  color: white;
+  font-weight: 900;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: blueviolet;
+  font-family: "Moo Lah Lah", cursive;
+  font-size: 40px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gg-search {
+  margin-left: 3px;
+  color: white;
+}
+.limited-offer {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+}
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands {
+  padding-top: 20px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.slider {
+  background-color: blanchedalmond;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
+  overflow: hidden;
+}
+.slider-wrapper {
+  display: flex;
+  width: 600vw;
+  transition: all 4s ease-in-out;
+}
+.slider-item {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.slider-img {
+  width: 250px;
+  height: 450px;
+  z-index: 1;
+}
+.img-back {
+  background: linear-gradient(
+      217deg,
+      rgba(177, 124, 202, 0.8),
+      rgba(65, 176, 196, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(209, 96, 162, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(218, 247, 116, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  width: 450px;
+  height: 450px;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  position: absolute;
+}
+
+.item-price {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  color: black;
+  border: 1px solid gray;
+}
+.item-name {
+  font-size: 60px;
+  font-weight: 900;
+  color: black;
+}
+.item-button {
+  color: black;
+  font-weight: 900;
+  font-size: 30px;
+  border: 1px solid gray;
+  background-color: white;
+}
+.item-button:hover {
+  background-color: black;
+  color: white;
+}
+.name-price {
+  position: absolute;
+  top: 30%;
+  right: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.material-icons {
+  width: 50px;
+  height: 50px;
+  color: blueviolet;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 30%;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
