@@ -1,3 +1,13 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   margin: 0;
@@ -53,7 +63,7 @@ nav {
 .slider-wrapper {
   display: flex;
   width: 600vw;
-  transition: all 4s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 .slider-item {
   width: 100vw;
@@ -102,6 +112,7 @@ nav {
   font-size: 30px;
   border: 1px solid gray;
   background-color: white;
+  border-style: outset;
 }
 .item-button:hover {
   background-color: black;
@@ -142,5 +153,227 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 30px;
+  position: relative;
+  height: 100vh;
+}
+.product-image {
+  width: 450px;
+  height: 450px;
+}
+.second-column-details {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 80px;
+  width: 800px;
+}
+.product-title {
+  margin-top: 0px;
+  font-size: 60px;
+}
+.product-price {
+  font-size: 30px;
+}
+.product-colors {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+/*.color1 {
+  background-color: black;
+}
+.color2 {
+  background-color: rgb(29, 146, 146);
+}
+.color3 {
+  background-color: blanchedalmond;
+}
+.color4 {
+  background-color: brown;
+}
+*/
+.product-sizes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.size {
+  margin-right: 20px;
+  height: 30px;
+  width: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.buy-button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: 1px solid black;
+  width: 100px;
+  padding: 8px;
+  margin-top: 20px;
+  margin-left: 550px;
+  font-weight: bold;
+  border-style: outset;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: white;
+  color: black;
+}
+.payment-wrapper {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.payment-section {
+  position: relative;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  height: 500px;
+  padding: 10px 50px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: -2px -4px 20px 1px rgba(235, 172, 229, 0.91);
+  -webkit-box-shadow: -2px -4px 20px 1px rgba(235, 172, 229, 0.91);
+  -moz-box-shadow: -2px -4px 20px 1px rgba(235, 172, 229, 0.91);
+}
+.payment-info {
+  width: 400px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+.payment-h1 {
+  color: rgb(167, 160, 160);
+}
+.card-dates {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  border: none;
+}
+.card-date {
+  width: 33.3%;
+}
+.payment-button {
+  position: absolute;
+  height: 30px;
+  bottom: -30px;
+  border: none;
+  width: 100%;
+  left: 0;
+  cursor: pointer;
+  background-color: rgb(87, 226, 87);
+}
+.payment-close {
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.gallery {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.gallery-item {
+  flex: 1;
+  padding: 50px;
+}
+.gallery-img {
+  width: 100%;
+}
+
+.new-season {
+  display: flex;
+}
+.season-items {
+  flex: 1;
+  height: 500px;
+}
+
+.season-img {
+  width: 100%;
+  height: 500px;
+}
+.middle {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.season-button {
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
   padding: 20px;
+  width: 40%;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.footer-list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-indent: 0;
+  line-height: 2em;
+}
+.footer-list-items {
+  cursor: pointer;
+}
+.footer-right {
+  flex-grow: 1;
+  padding: 20px;
+  align-items: center;
+  background-color: whitesmoke;
 }

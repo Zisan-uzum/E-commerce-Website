@@ -13,7 +13,7 @@
 </head>
 <body>
   
-    <nav>
+    <nav id="nav">
         <div class="top-nav">
             <div class="logo">
                 <span>DOLLS KILL</span>
@@ -41,7 +41,9 @@
                 <div class="img-back"> </div>
                 <div class="name-price">
                     <h1 class="item-name">Jacket</br></h1>
-                    <button class="item-button"> BUY NOW !</button>
+                    <a href="#product">
+                        <button class="item-button"> BUY NOW !</button>
+                    </a>
                 </div>
                 <h2 class="item-price">130$</h2>
             </div>
@@ -50,7 +52,9 @@
                 <div class="img-back"> </div>
                 <div class="name-price">
                     <h1 class="item-name">Blazer</br></h1>
-                    <button class="item-button"> BUY NOW !</button>
+                    <a href="#product">
+                        <button class="item-button"> BUY NOW !</button>
+                    </a>
                 </div>
                 <h2 class="item-price">140$</h2>
             </div>
@@ -59,7 +63,9 @@
                 <div class="img-back"> </div>
                 <div class="name-price">
                     <h1 class="item-name">Faux</br></h1>
-                    <button class="item-button"> BUY NOW !</button>
+                    <a href="#product">
+                        <button class="item-button"> BUY NOW !</button>
+                    </a>
                 </div>
                 <h2 class="item-price">150$</h2>
             </div>
@@ -68,7 +74,9 @@
                 <div class="img-back"> </div>
                 <div class="name-price">
                 <h1 class="item-name">Bridesmaids</br></h1>
-                <button class="item-button"> BUY NOW !</button>
+                <a href="#product">
+                    <button class="item-button"> BUY NOW !</button>
+                </a>
                 </div>
                 <h2 class="item-price">160$</h2>
             </div>
@@ -77,7 +85,9 @@
                 <div class="img-back"> </div>
                 <div class="name-price">
                     <h1 class="item-name">Sateen Jacket</br></h1>
-                    <button class="item-button"> BUY NOW !</button>
+                    <a href="#product">
+                        <button class="item-button"> BUY NOW !</button>
+                    </a>
                 </div>
                 <h2 class="item-price">170$</h2>
             </div>
@@ -86,7 +96,9 @@
                 <div class="img-back"> </div>
                 <div class="name-price">
                     <h1 class="item-name">Sateen Top</br></h1>
-                    <button class="item-button"> BUY NOW !</button>
+                    <a href="#product">
+                        <button class="item-button"> BUY NOW !</button>
+                    </a>
                 </div>
                 <h2 class="item-price">180$</h2>
             </div>
@@ -124,31 +136,135 @@
         </div>
     </div>
 
-    <div class="product">
+    <div class="product" id="product">
         <div class="first-column">
             <img class="product-image" src="img1.jpg" alt="">
         </div>
         <div class="second-column-details">
             <div class="product-details">
             <h1 class="product-title">Jacket</h1>
-            <span class="product-price">130$</span>
+            <span class="product-price"><b>$130</b></span>
             <p class="product-explanation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore eligendi est distinctio, totam voluptatem tempore quia culpa exercitationem nisi et sequi vero, voluptate laudantium! Esse optio at beatae sint.</p>
             </div>
 
             <div class="product-colors">
-            <div class="color"></div>
-            <div class="color"></div>
-            <div class="color"></div>
+            <div class="color color1"></div>
+            <div class="color color2"></div>
+            <div class="color color3"></div>
+            <div class="color color4"></div>
             </div>
         
             <div class="product-sizes">
-            <div class="size"><b>S</b></div>
-            <div class="size"><b>M</b></div>
-            <div class="size"><b>L</b></div>
-            <div class="size"><b>XL</b></div>
+            <div class="size"></div>
+            <div class="size"></div>
+            <div class="size"></div>
+            <div class="size"></div>
             </div>
+
+            <div class="buy-button">BUY NOW!</div>
+        </div>
+
+        <div class="payment-wrapper">
+            <div class="payment-section">
+            <h1 class="payment-h1">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" class="payment-info" placeholder="John Doe">
+            <label>Phone Number</label>
+            <input type="tel" id="payment-info" placeholder="+1 674 6738" class="payment-info">
+            <label>Address</label>
+            <input type="text" class="payment-info" placeholder="New Jersey 86634.street">
+            <h1 class="payment-h1">Card Information</h1>
+            <i class="material-icons payment-icon">
+                payment
+            </i>
+            <input type="password" class="payment-info" placeholder="Card Number">
+                <div class="card-dates">
+                <input type="text" class="payment-info card-date" placeholder="mm">
+                <input type="text" class="payment-info card-date" placeholder="yyyy">
+                <input type="text" class="payment-info card-date" placeholder="cvv">
+                </div>
+            <button class="payment-button">Checkout</button>
+            <span class="payment-close">X</span>
+        </div>        
+    </div>
+</div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <h1>BE YOURSELF!</h1>
+            <img class="gallery-img" src="gallery1.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+            <img class="gallery-img" src="gallery2.jpg" alt="">
+            <h1>This is the First Day of Your New Life</h1>
+        </div>
+        <div class="gallery-item">
+            <h1>Just do it!</h1>
+            <img class="gallery-img" src="gallery3.jpg" alt="">     
         </div>
     </div>
+
+    <div class="new-season">
+        <div class="season-items">
+            <img class="season-img" src="newseason1.jpg" alt="">
+        </div>
+        <div class="season-items middle">
+            <h3>WINTER NEW ARRIVALS</h3>
+            <h2>New Season</h2>
+            <h1>New Collection</h1>
+            <a href="#nav">
+                <button class="season-button">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="season-items">
+            <img class="season-img" src="newseason2.jpg" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <div class="footer-item">
+                <h3 class="footer-heading">
+                About Us
+                </h1>
+                <ul class="footer-list">
+                <li class="footer-list-items">Company</li>
+                <li class="footer-list-items">Contact</li>
+                <li class="footer-list-items">Careers</li>
+                <li class="footer-list-items">Affiliates</li>
+                <li class="footer-list-items">Stores</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-heading">
+                    Useful Links
+                    </h1>
+                    <ul class="footer-list">
+                    <li class="footer-list-items">Support</li>
+                    <li class="footer-list-items">Refund</li>
+                    <li class="footer-list-items">FAQ</li>
+                    <li class="footer-list-items">Feedback</li>
+                    <li class="footer-list-items">Stories</li>
+                    </ul>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-heading">
+                    Products
+                    </h1>
+                    <ul class="footer-list">
+                    <li class="footer-list-items">Jacket</li>
+                    <li class="footer-list-items">Blazer</li>
+                    <li class="footer-list-items">Faux</li>
+                    <li class="footer-list-items">Bridesmaids</li>
+                    <li class="footer-list-items">Sateen Jacket</li>
+                    <li class="footer-list-items">Sateen Top</li>
+                    </ul>
+            </div>
+             
+        </div>
+        <div class="footer-right">
+            <h3 class="footer-heading">Subscribe to Our Newsletter</h3>
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
