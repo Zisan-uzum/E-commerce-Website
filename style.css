@@ -349,7 +349,7 @@ nav {
 footer {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
 }
 
 .footer-left {
@@ -373,7 +373,37 @@ footer {
 }
 .footer-right {
   flex-grow: 1;
-  padding: 20px;
-  align-items: center;
+  padding-left: 70px;
+  padding-top: 20px;
+  align-items: flex-start;
   background-color: whitesmoke;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+.footer-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+.footer-join-button {
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.fa-brands {
+  color: black;
+}
+.footer-span {
+  margin-top: 40px;
+  font-size: 10px;
 }

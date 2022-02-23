@@ -51,22 +51,42 @@ const products = [
   {
     title: "Faux",
     price: 150,
-    img: "img3.jpg",
+    colors: [
+      { code: "black", img: "img3.jpg" },
+      { code: "#99591d", img: "img3-color2.jpg" },
+      { code: "#8fbf28", img: "img3-color3.jpg" },
+      { code: "cream", img: "img3-color4.jpg" },
+    ],
   },
   {
     title: "Bridesmaids",
     price: 160,
-    img: "img4.jpg",
+    colors: [
+      { code: "#5e7370", img: "img5.jpg" },
+      { code: "#5e7370", img: "img5-color2.jpg" },
+      { code: "#fad17f", img: "img5-color3.jpg" },
+      { code: "#fad17f", img: "img5-color4.jpg" },
+    ],
   },
   {
     title: "Sateen Jacket",
     price: 170,
-    img: "img5.jpg",
+    colors: [
+      { code: "black", img: "img4.jpg" },
+      { code: "black", img: "img4-color2.jpg" },
+      { code: "beige", img: "img4-color3.jpg" },
+      { code: "grey", img: "img4-color4.jpg" },
+    ],
   },
   {
     title: "Sateen Top",
     price: 180,
-    img: "img6.jpg",
+    colors: [
+      { code: "grey", img: "img6.jpg" },
+      { code: "brown", img: "img6-color2.jpg" },
+      { code: "black", img: "img6-color3.jpg" },
+      { code: "#c8ed34", img: "img6-color4.jpg" },
+    ],
   },
 ];
 
